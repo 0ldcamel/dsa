@@ -7,9 +7,9 @@ def add_numbers():
     return numbers
 
 def remove_numbers(numbers):
-    numbers.reverse()
     for i in range(10**5):
-        numbers.pop()
+        numbers.remove(numbers[0])
+
 
 start_time = time.time()
 numbers = add_numbers()
